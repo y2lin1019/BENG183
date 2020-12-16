@@ -45,7 +45,7 @@ The design matrix element *x<sub>jr<sub>* is an element that indicates whether a
 **Input Files:**
 The input files for Deseq two are a count matrix and column data. The count matrix comes from featureCounts where the ith row and jth column describe the expression level for gene i in sample j. The counts must be raw in order for the statistical model for Deseq2 to hold true. The column data is a table with metadata on the count matrix columns. 
 
-![figure1](./Count_Matrix.png)
+![figure1](./Count_Matrix1.png)
 
 Figure 1: Example of a count matrix where the ith row and jth column describe the expression level for gene i in sample j. 
 
@@ -65,7 +65,7 @@ The Deseq2 command takes in a single parameter, which is the DeseqDataSet object
 Results Table:
 After running Deseq2, running this command: Results <- results(Dds), gives the results table. 
 
-![figure3](./Results_Table.png)
+![figure3](./Results_Table1.png)
 
 Figure 3: This is an example results table which shows you base mean (expression), log2FoldChange, lfcSe, Stat, and p-value for each gene.
 
@@ -81,7 +81,7 @@ The first common way to visualize the results from the results table is through 
 
 **Volcano Plot:**
 
-![figure5](./Volcano_Plot.png)
+![figure5](./Volcano_Plot1.png)
 
 Figure 5: Volcano Plot where the x-axis represents log2FoldChange and y-axis represents the significance values
 
