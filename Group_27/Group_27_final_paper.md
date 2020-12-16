@@ -87,7 +87,7 @@ Figure 5: Volcano Plot where the x-axis represents log2FoldChange and y-axis rep
 The second common way to visualize the results from the results table is through a volcano plot. In a volcano plot, each point represents a gene, and a point is colored if the log2FoldChange meets a minimum threshold for p-value. A colored point represents a gene that is differentially expressed. In the Volcano plot, the x-axis represents log2Foldchange and the y-axis represents significance values. The right half of the plot represents genes that are upregulated, while the left half represents genes that are downregulated. The top of the plot represents the most statistically significant genes. 
 
 
-### Application
+## **Application**
 
 The following are three ways DESeq2 can be applied and an example of such an application in a published experiment.
 
@@ -131,7 +131,7 @@ An Integrated Genome-wide CRISPRa Approach to Functionalize lncRNAs in Drug Resi
   
 
 
-### DESeq2 vs. Other Tools
+## **DESeq2 vs. Other Tools**
 
 
 ##### How does DESeq2 compare against other differential expression analysis tools?
@@ -154,7 +154,7 @@ The researchers concluded that for experiments with >20 biological replicates, a
 Schurch et al., RNA Society, 2015
 
 
-### Reference
+## **References**
 
 [1] [https://pubmed.ncbi.nlm.nih.gov/27022035/](https://pubmed.ncbi.nlm.nih.gov/27022035/) 
 
