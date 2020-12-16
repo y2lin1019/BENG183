@@ -146,7 +146,7 @@ Biological replicates are samples produced with the same experimental design but
 The researchers concluded that for experiments with >20 biological replicates, all eleven tools performed equally well. However, for experiments with &lt;12 biological replicates DESeq2 (and edgeR) outperformed the rest in minimizing false positive rates while still obtaining relatively high true positive rates.
 
 
-![schurch](./schurch2.jpg)
+![schurch](./schurch.jpg)
 
 Schurch et al., RNA Society, 2015
 
