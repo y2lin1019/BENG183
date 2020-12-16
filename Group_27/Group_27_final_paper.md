@@ -164,3 +164,10 @@ Schurch et al., RNA Society, 2015
 [5] [https://www.cell.com/cell/pdf/S0092-8674(18)30384-2.pdf](https://www.cell.com/cell/pdf/S0092-8674(18)30384-2.pdf) 
 
 [6] [https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8)
+
+[7] [http://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html](http://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)
+
+[8] [https://bioc.ism.ac.jp/packages/2.14/bioc/vignettes/DESeq2/inst/doc/beginner.pdf](https://bioc.ism.ac.jp/packages/2.14/bioc/vignettes/DESeq2/inst/doc/beginner.pdf)
+
+[9] [https://www.genomatix.de/online_help/help_regionminer/DESeq2.pdf](https://www.genomatix.de/online_help/help_regionminer/DESeq2.pdf)
+
