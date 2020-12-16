@@ -141,7 +141,7 @@ An Integrated Genome-wide CRISPRa Approach to Functionalize lncRNAs in Drug Resi
 In Schurch et al. 2015<sup>[1]</sup>, “How many biological replicates are needed in an RNA-seq experiment and which differential expression tool should you use?” Eleven tools were evaluated on a range of expression data that differ by the number of biological replicates included. Each tool was also evaluated on a dataset of clean replicates to establish a ‘truth value’ relative to each tool. The control and experimental values were compared in the end to derive truth and false positive rates.
 
 
-    Biological replicates are samples produced with the same experimental design but from different specimens. Technical (clean) replicates are repeated measurements of the same specimen. <sup>[2]</sup>
+Biological replicates are samples produced with the same experimental design but from different specimens. Technical (clean) replicates are repeated measurements of the same specimen. <sup>[2]</sup>
 
 The researchers concluded that for experiments with >20 biological replicates, all eleven tools performed equally well. However, for experiments with &lt;12 biological replicates DESeq2 (and edgeR) outperformed the rest in minimizing false positive rates while still obtaining relatively high true positive rates.
 
