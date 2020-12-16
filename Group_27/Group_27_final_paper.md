@@ -23,17 +23,17 @@ DESeq2 is an analysis tool used to analyze the count data from RNA-Seq. It is av
 Normalization is the first step of the data analysis process. It is also the most important step. With normalization, the expression levels of genes are more comparable between and within samples. After normalization, a GLM is fitted to each gene to determine the overall expression strength of the gene.
 The read count is modeled as a negative binomial distribution with mean and dispersion. The mean is calculated using the equation below:
 
-![](./equation_1.png)
+![equation1](./equation_1.png)
 
 To get the mean *uij*, the quantity *qij* is scaled by the gene-specific normalization factor *sij*, which is also known as the size factor. *qij* represents the gene length, which is proportional to the concentration of cDNA fragments from the gene in the sample. Since *sij* is considered as a constant within a sample, it can be replaced by another constant, *sj*, which is a constant that can be used for all genes in a sample. *sj* accounts for differences in sequencing depth between samples. The constant is estimated using the median-of-ratios method shown below:
 
-![equation2]()
+![equation2](./equation_2.png)
 
 In the method, counts are divided by the sample-specific normalization factors determined by median ratio of gene counts relative to the geometric mean per gene.
 
 The overall expression strength of the gene is determined using GLMs with a logarithmic link:
 
-![equation3]()
+![equation3](./equation_3.png)
 
 The design matrix element *xjr* is an element that indicates whether a sample *j* is treated or not. The GLM fit returns the coefficient *𝜷ir*, which indicates the overall expression strength of the gene. The GLMs also return the log2 fold change between treatment and control samples.
 
