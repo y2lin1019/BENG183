@@ -148,7 +148,9 @@ The researchers concluded that for experiments with >20 biological replicates, a
 
 ![schurch](./schurch.jpg)
 
-Schurch et al., RNA Society, 2015
+Schurch et al., RNA Society, 2015 <sup>[1]</sup>
+
+
 
 
 ## **References**
