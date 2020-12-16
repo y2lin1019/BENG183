@@ -92,7 +92,7 @@ The second common way to visualize the results from the results table is through
 The following are three ways DESeq2 can be applied and an example of such an application in a published experiment.
 
 
-#### Differentiation
+**Differentiation**
 
 
 ##### Differentiate between two genes or more genes:
@@ -104,7 +104,7 @@ Human gut microbes impact host serum metabolome and insulin sensitivity (H. Pede
 *   “For associations of microbial functional modules with metabolic syndrome and type 2 diabetes, the ranks were based on Wald statistics for testing differentially abundant [KEGG Orthology gene groups] with a negative binomial test, using the DESeq2 R package” <sup>[3]</sup>
 
 
-#### Identification
+**Identification**
 
 
 ##### Identify sample expressing differently in drug trial or disease state.
@@ -116,7 +116,7 @@ Tumor Evolution and Drug Response in Patient-Derived Organoid Models of Bladder 
 *   “Differentially expressed genes in organoid samples were identified compared to their primary tumors using the DESeq2 package” <sup>[4]</sup>
 
 
-#### Normalization
+**Normalization**
 
 
 ##### Normalize expression levels for further computation (e.g. clustering).
@@ -134,7 +134,7 @@ An Integrated Genome-wide CRISPRa Approach to Functionalize lncRNAs in Drug Resi
 ## **DESeq2 vs. Other Tools**
 
 
-##### How does DESeq2 compare against other differential expression analysis tools?
+**How does DESeq2 compare against other differential expression analysis tools?**
 
 In Schurch et al. 2015<sup>[1]</sup>, “How many biological replicates are needed in an RNA-seq experiment and which differential expression tool should you use?” Eleven tools were evaluated on a range of expression data that differ by the number of biological replicates included. Each tool was also evaluated on a dataset of clean replicates to establish a ‘truth value’ relative to each tool. The control and experimental values were compared in the end to derive truth and false positive rates.
 
@@ -143,15 +143,7 @@ In Schurch et al. 2015<sup>[1]</sup>, “How many biological replicates are need
 
 The researchers concluded that for experiments with >20 biological replicates, all eleven tools performed equally well. However, for experiments with &lt;12 biological replicates DESeq2 (and edgeR) outperformed the rest in minimizing false positive rates while still obtaining relatively high true positive rates.
 
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image9.png "image_tooltip")
-
-
-Schurch et al., RNA Society, 2015
+![Schurch et al., RNA Society, 2015](./schurch.jpg)
 
 
 ## **References**
