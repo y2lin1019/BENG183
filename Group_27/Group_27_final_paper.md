@@ -86,3 +86,84 @@ Figure 5: Volcano Plot where the x-axis represents log2FoldChange and y-axis rep
 
 The second common way to visualize the results from the results table is through a volcano plot. In a volcano plot, each point represents a gene, and a point is colored if the log2FoldChange meets a minimum threshold for p-value. A colored point represents a gene that is differentially expressed. In the Volcano plot, the x-axis represents log2Foldchange and the y-axis represents significance values. The right half of the plot represents genes that are upregulated, while the left half represents genes that are downregulated. The top of the plot represents the most statistically significant genes. 
 
+
+### Application
+
+The following are three ways DESeq2 can be applied and an example of such an application in a published experiment.
+
+
+#### Differentiation
+
+
+##### Differentiate between two genes or more genes:
+
+Human gut microbes impact host serum metabolome and insulin sensitivity (H. Pedersen, et al.  Nature 2016.)
+
+
+
+*   “For associations of microbial functional modules with metabolic syndrome and type 2 diabetes, the ranks were based on Wald statistics for testing differentially abundant [KEGG Orthology gene groups] with a negative binomial test, using the DESeq2 R package” <sup>[3]</sup>
+
+
+#### Identification
+
+
+##### Identify sample expressing differently in drug trial or disease state.
+
+Tumor Evolution and Drug Response in Patient-Derived Organoid Models of Bladder Cancer (Suk Hyung Lee, et al. Cell 2018)
+
+
+
+*   “Differentially expressed genes in organoid samples were identified compared to their primary tumors using the DESeq2 package” <sup>[4]</sup>
+
+
+#### Normalization
+
+
+##### Normalize expression levels for further computation (e.g. clustering).
+
+An Integrated Genome-wide CRISPRa Approach to Functionalize lncRNAs in Drug Resistance (Assaf C. Bester, et al. Cell 2018)
+
+
+
+*   “Transcript counts per gene were normalized by DESeq2, and genes with arithmetic means lower than 0.5 were filtered from further analysis” <sup>[5]</sup>
+*   “Normalized counts were subjected to the varianceStabilizingTransformation (VST) function from DESeq2 prior to downstream analysis.” <sup>[5]</sup>
+
+  
+
+
+### DESeq2 vs. Other Tools
+
+
+##### How does DESeq2 compare against other differential expression analysis tools?
+
+In Schurch et al. 2015<sup>[1]</sup>, “How many biological replicates are needed in an RNA-seq experiment and which differential expression tool should you use?” Eleven tools were evaluated on a range of expression data that differ by the number of biological replicates included. Each tool was also evaluated on a dataset of clean replicates to establish a ‘truth value’ relative to each tool. The control and experimental values were compared in the end to derive truth and false positive rates.
+
+
+    Biological replicates are samples produced with the same experimental design but from different specimens. Technical (clean) replicates are repeated measurements of the same specimen. <sup>[2]</sup>
+
+The researchers concluded that for experiments with >20 biological replicates, all eleven tools performed equally well. However, for experiments with &lt;12 biological replicates DESeq2 (and edgeR) outperformed the rest in minimizing false positive rates while still obtaining relatively high true positive rates.
+
+
+
+<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image9.png "image_tooltip")
+
+
+Schurch et al., RNA Society, 2015
+
+
+### Reference
+
+[1] [https://pubmed.ncbi.nlm.nih.gov/27022035/](https://pubmed.ncbi.nlm.nih.gov/27022035/) 
+
+[2] [www.nigms.nih.gov/training/documents/module3-biological-and-technical-replicates.pdf](https://www.nigms.nih.gov/training/documents/module3-biological-and-technical-replicates.pdf) 
+
+[3] [https://www.nature.com/articles/nature18646](https://www.nature.com/articles/nature18646) 
+
+[4] [https://pubmed.ncbi.nlm.nih.gov/29625057/](https://pubmed.ncbi.nlm.nih.gov/29625057/) 
+
+[5] [https://www.cell.com/cell/pdf/S0092-8674(18)30384-2.pdf](https://www.cell.com/cell/pdf/S0092-8674(18)30384-2.pdf) 
+
+[6] [https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8)
