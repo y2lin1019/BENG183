@@ -30,7 +30,7 @@ The read count is modeled as a negative binomial distribution with mean and disp
 
 To get the mean *u<sub>ij<sub>*, the quantity *q<sub>ij<sub>* is scaled by the gene-specific normalization factor *s<sub>ij<sub>*, which is also known as the size factor. *q<sub>ij<sub>* represents the gene length, which is proportional to the concentration of cDNA fragments from the gene in the sample. Since *s<sub>ij<sub>* is considered as a constant within a sample, it can be replaced by another constant, *s<sub>j<sub>*, which is a constant that can be used for all genes in a sample. *s<sub>j<sub>* accounts for differences in sequencing depth between samples. The constant is estimated using the median-of-ratios method shown below:
 
-![equation2](./equation_2(1).png)
+![equation2](./equation_2.png)
 
 In the method, counts are divided by the sample-specific normalization factors determined by median ratio of gene counts relative to the geometric mean per gene.
 
