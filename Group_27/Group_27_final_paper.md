@@ -45,11 +45,11 @@ The design matrix element *xjr* is an element that indicates whether a sample *j
 **Input Files:**
 The input files for Deseq two are a count matrix and column data. The count matrix comes from featureCounts where the ith row and jth column describe the expression level for gene i in sample j. The counts must be raw in order for the statistical model for Deseq2 to hold true. The column data is a table with metadata on the count matrix columns. 
 
-![figure1](./Count_Matrix.png =100x20)
+![figure1](./Count_Matrix.png) {:height="700px" width="400px"}
 
 Figure 1: Example of a count matrix where the ith row and jth column describe the expression level for gene i in sample j. 
 
-![figure2](./Column_Data.png =100x20)
+![figure2](./Column_Data.png) {:height="700px" width="400px"}
 
 Figure 2: Example of column data, where the first column is the sample name, the second column is the patient type, the third column is the treatment type, and the fourth column is the amount of time for the treatment. The columns tell the metadata for each sample in a count matrix.
 
