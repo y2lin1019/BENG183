@@ -45,11 +45,11 @@ The design matrix element *xjr* is an element that indicates whether a sample *j
 **Input Files:**
 The input files for Deseq two are a count matrix and column data. The count matrix comes from featureCounts where the ith row and jth column describe the expression level for gene i in sample j. The counts must be raw in order for the statistical model for Deseq2 to hold true. The column data is a table with metadata on the count matrix columns. 
 
-![figure1](./Count\ Matrix.png)
+![figure1](./Count_Matrix.png)
 
 Figure 1: Example of a count matrix where the ith row and jth column describe the expression level for gene i in sample j. 
 
-![figure2](./Column\ Data.png)
+![figure2](./Column_Data.png)
 
 Figure 2: Example of column data, where the first column is the sample name, the second column is the patient type, the third column is the treatment type, and the fourth column is the amount of time for the treatment. The columns tell the metadata for each sample in a count matrix.
 
@@ -65,7 +65,7 @@ The Deseq2 command takes in a single parameter, which is the DeseqDataSet object
 Results Table:
 After running Deseq2, running this command: Results <- results(Dds), gives the results table. 
 
-![figure3](./Results\ Table.png)
+![figure3](./Results_Table.png)
 
 Figure 3: This is an example results table which shows you base mean (expression), log2FoldChange, lfcSe, Stat, and p-value for each gene.
 
@@ -73,7 +73,7 @@ The three most important results in the results table for differential expressio
 
 **MA Plot:**
 
-![figure4](./MA\ Plot.png)
+![figure4](./MA_Plot.png)
 
 Figure 4: MA plot where the x-axis represents average expression and y-axis represents  log2FoldChange
 
@@ -81,7 +81,7 @@ The first common way to visualize the results from the results table is through 
 
 **Volcano Plot:**
 
-![figure5](./Volcano\ Plot.png)
+![figure5](./Volcano_Plot.png)
 
 Figure 5: Volcano Plot where the x-axis represents log2FoldChange and y-axis represents the significance values
 
