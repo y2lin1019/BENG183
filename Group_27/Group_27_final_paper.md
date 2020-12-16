@@ -26,17 +26,17 @@ DESeq2 is an analysis tool used to analyze the count data from RNA-Seq. It is av
 Normalization is the first step of the data analysis process. It is also the most important step. With normalization, the expression levels of genes are more comparable between and within samples. After normalization, a GLM is fitted to each gene to determine the overall expression strength of the gene.
 The read count is modeled as a negative binomial distribution with mean and dispersion. The mean is calculated using the equation below:
 
-![equation1](./equation_1.png)
+![equation1](./equation_1.png =100x20)
 
 To get the mean *uij*, the quantity *qij* is scaled by the gene-specific normalization factor *sij*, which is also known as the size factor. *qij* represents the gene length, which is proportional to the concentration of cDNA fragments from the gene in the sample. Since *sij* is considered as a constant within a sample, it can be replaced by another constant, *sj*, which is a constant that can be used for all genes in a sample. *sj* accounts for differences in sequencing depth between samples. The constant is estimated using the median-of-ratios method shown below:
 
-![equation2](./equation_2.png)
+![equation2](./equation_2.png =100x20)
 
 In the method, counts are divided by the sample-specific normalization factors determined by median ratio of gene counts relative to the geometric mean per gene.
 
 The overall expression strength of the gene is determined using GLMs with a logarithmic link:
 
-![equation3](./equation_3.png)
+![equation3](./equation_3.png =100x20)
 
 The design matrix element *xjr* is an element that indicates whether a sample *j* is treated or not. The GLM fit returns the coefficient *𝜷ir*, which indicates the overall expression strength of the gene. The GLMs also return the log2 fold change between treatment and control samples.
 
@@ -45,11 +45,11 @@ The design matrix element *xjr* is an element that indicates whether a sample *j
 **Input Files:**
 The input files for Deseq two are a count matrix and column data. The count matrix comes from featureCounts where the ith row and jth column describe the expression level for gene i in sample j. The counts must be raw in order for the statistical model for Deseq2 to hold true. The column data is a table with metadata on the count matrix columns. 
 
-![figure1](./Count_Matrix.png)
+![figure1](./Count_Matrix.png =100x20)
 
 Figure 1: Example of a count matrix where the ith row and jth column describe the expression level for gene i in sample j. 
 
-![figure2](./Column_Data.png)
+![figure2](./Column_Data.png =100x20)
 
 Figure 2: Example of column data, where the first column is the sample name, the second column is the patient type, the third column is the treatment type, and the fourth column is the amount of time for the treatment. The columns tell the metadata for each sample in a count matrix.
 
@@ -65,7 +65,7 @@ The Deseq2 command takes in a single parameter, which is the DeseqDataSet object
 Results Table:
 After running Deseq2, running this command: Results <- results(Dds), gives the results table. 
 
-![figure3](./Results_Table.png)
+![figure3](./Results_Table.png =100x20)
 
 Figure 3: This is an example results table which shows you base mean (expression), log2FoldChange, lfcSe, Stat, and p-value for each gene.
 
@@ -73,7 +73,7 @@ The three most important results in the results table for differential expressio
 
 **MA Plot:**
 
-![figure4](./MA_Plot.png)
+![figure4](./MA_Plot.png =100x20)
 
 Figure 4: MA plot where the x-axis represents average expression and y-axis represents  log2FoldChange
 
@@ -81,7 +81,7 @@ The first common way to visualize the results from the results table is through 
 
 **Volcano Plot:**
 
-![figure5](./Volcano_Plot.png)
+![figure5](./Volcano_Plot.png =100x20)
 
 Figure 5: Volcano Plot where the x-axis represents log2FoldChange and y-axis represents the significance values
 
@@ -146,7 +146,7 @@ Biological replicates are samples produced with the same experimental design but
 The researchers concluded that for experiments with >20 biological replicates, all eleven tools performed equally well. However, for experiments with &lt;12 biological replicates DESeq2 (and edgeR) outperformed the rest in minimizing false positive rates while still obtaining relatively high true positive rates.
 
 
-![schurch](./schurch.jpg)
+![schurch](./schurch.jpg =100x20)
 
 Schurch et al., RNA Society, 2015
 
